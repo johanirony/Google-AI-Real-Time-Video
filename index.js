@@ -40,7 +40,7 @@ app.post('/generate', async (req, res) => {
 
     try {
         const genAI = new GoogleGenerativeAI(process.env.API_KEY);
-        const model = genAI.getGenerativeModel({ model: "gemini-pro-vision" });
+        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
         // Prepare the prompt parts
         const promptParts = [
