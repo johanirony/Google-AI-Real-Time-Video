@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, clean font */
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px; /* More padding */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+    width: 90%;
+    max-width: 700px; /* Larger max-width */
+    text-align: center; /* Center everything */
+}
+
+h1 {
+    color: #007bff; /* Use a primary color for the heading */
+    font-size: 2.5rem; /* Larger heading */
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px; /* Larger buttons */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin: 5px; /* Add some margin between buttons */
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#imageInput {
+    margin: 20px 0;
+    display: block; /* Make the input take up the full width */
+    width: 100%;
+}
+
+#promptText {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 2em; /* Ensure it takes up some space even when empty */
+    background-color: #f9f9f9; /* Light background */
+    font-style: italic; /* Italicize while listening/processing */
+    color: #666;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da; /* Lighter border */
+    border-radius: 6px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.response {
+    margin-top: 30px; /* More space above the response */
+    padding: 20px;
+    background-color: #e9ecef; /* Light gray background */
+    border: 1px solid #dee2e6; /* Lighter border */
+    border-radius: 8px;
+    text-align: left; /* Left-align the response text */
+    white-space: pre-wrap; /* Preserve formatting */
+}
+
+.response h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.loading {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#errorMessage {
+    color: #dc3545; /* Red error text */
+    margin-top: 10px;
+    font-weight: bold; /* Make errors more prominent */
+}
+
+/* Styles for the text input area */
+#textInputContainer {
+  margin-bottom: 20px; /* Add some space below the text area */
+}
+#textInputContainer label{
+    text-align: left;
+}

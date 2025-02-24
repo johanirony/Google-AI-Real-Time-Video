@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimodal Generative AI</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multimodal Generative AI Demo</h1>
+
+        <button id="startButton">Start Camera</button>
+        <button id="stopButton" disabled>Stop Camera</button>
+
+        <video id="videoElement" width="640" height="480" autoplay muted></video>
+        <p id="promptText"></p>
+
+        <label for="textInput">Or enter text:</label>
+        <textarea id="textInput" rows="4" cols="50"></textarea>
+        <button type="button" id="submitTextButton">Submit Text</button>
+
+        <div id="loading" class="loading"></div>
+        <div id="response"></div>
+        <p id="errorMessage" style="color: red; display: none;"></p>
+
+    </div>
+
+    <script src="/js/client.js"></script>
+</body>
+</html>
